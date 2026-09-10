@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ZJHighRoll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-page">
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-section">
+                <img src="logo.png" alt="ZJHighRoll Logo" class="logo">
+                <h1>ZJHighRoll</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Back to Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Login to your ZJHighRoll account</p>
+
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="••••••••">
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember">
+                        Remember me
+                    </label>
+                    <a href="#forgot" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn-primary btn-full">Login</button>
+            </form>
+
+            <div class="auth-divider">OR</div>
+
+            <div class="social-login">
+                <button class="social-btn google">
+                    <span>Login with Google</span>
+                </button>
+                <button class="social-btn discord">
+                    <span>Login with Discord</span>
+                </button>
+            </div>
+
+            <p class="auth-footer">
+                Don't have an account? <a href="signup.html" class="auth-link">Sign up here</a>
+            </p>
+        </div>
+
+        <div class="auth-info">
+            <h3>Join the Community</h3>
+            <ul>
+                <li>✓ Connect with casino enthusiasts</li>
+                <li>✓ Track your wins on leaderboards</li>
+                <li>✓ Access exclusive guides & strategies</li>
+                <li>✓ Participate in tournaments</li>
+                <li>✓ Real-time community chat</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="successMessage" class="success-message" style="display:none;">
+        <p>Login successful! Redirecting...</p>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

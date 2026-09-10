@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock - ZJHighRoll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-section">
+                <img src="logo.png" alt="ZJHighRoll Logo" class="logo">
+                <h1>ZJHighRoll</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clock.html" class="active">World Clock</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="clock-hero">
+        <div class="container">
+            <h2>World Clock</h2>
+            <p>Track time across different regions and plan your gaming sessions</p>
+        </div>
+    </section>
+
+    <section class="main-clock-section">
+        <div class="container">
+            <div class="main-clock-box">
+                <div class="local-time-container">
+                    <h3>Your Local Time</h3>
+                    <div class="digital-display" id="localTime">
+                        <span class="time">00:00:00</span>
+                        <span class="date" id="localDate"></span>
+                        <span class="timezone" id="localTimezone">UTC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timezone-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Community Time Zones</h2>
+                <p>Stay connected with players around the world</p>
+                <div class="controls">
+                    <input type="text" id="timezoneSearch" placeholder="Search time zones..." class="search-input">
+                    <select id="sortBy" class="sort-select">
+                        <option value="offset">Sort by Offset</option>
+                        <option value="name">Sort by Name</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="timezones-grid" id="timezonesGrid">
+            </div>
+        </div>
+    </section>
+
+    <section class="converter-section">
+        <div class="container">
+            <h2>Time Zone Converter</h2>
+            <div class="converter-box">
+                <div class="converter-column">
+                    <label for="fromTimezone">From:</label>
+                    <select id="fromTimezone" class="timezone-select"></select>
+                    <input type="time" id="fromTime" class="time-input" value="12:00">
+                </div>
+
+                <div class="converter-icon">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M8 15L22 15M22 15L18 11M22 15L18 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <div class="converter-column">
+                    <label for="toTimezone">To:</label>
+                    <select id="toTimezone" class="timezone-select"></select>
+                    <input type="time" id="toTime" class="time-input" readonly>
+                </div>
+            </div>
+            <div id="convertedTime" class="conversion-result"></div>
+        </div>
+    </section>
+
+    <section class="meeting-planner-section">
+        <div class="container">
+            <h2>Tournament Meeting Planner</h2>
+            <div class="meeting-planner">
+                <div class="planner-input">
+                    <label for="meetingTime">Select a time:</label>
+                    <input type="datetime-local" id="meetingTime" class="meeting-input">
+                    <button class="btn-primary" onclick="planMeeting()">Plan Meeting</button>
+                </div>
+                <div class="meeting-results" id="meetingResults"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ZJHighRoll Casino Community. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="clock.js"></script>
+</body>
+</html>

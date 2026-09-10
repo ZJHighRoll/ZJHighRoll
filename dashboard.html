@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ZJHighRoll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-section">
+                <img src="logo.png" alt="ZJHighRoll Logo" class="logo">
+                <h1>ZJHighRoll</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clock.html">World Clock</a></li>
+                <li><a href="#account" class="btn-login">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard-hero">
+        <div class="container">
+            <h2>Welcome, <span id="userDisplayName">Player</span>!</h2>
+            <p>Here's your gaming dashboard</p>
+        </div>
+    </section>
+
+    <section class="dashboard-content">
+        <div class="container">
+            <div class="dashboard-grid">
+                <div class="stats-card">
+                    <h3>Your Stats</h3>
+                    <div class="stat-item">
+                        <span class="stat-label">Total Points</span>
+                        <span class="stat-value" id="userPoints">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Total Wins</span>
+                        <span class="stat-value" id="userWins">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Rank</span>
+                        <span class="stat-value" id="userRank">-</span>
+                    </div>
+                    <button class="btn-secondary" onclick="location.href='profile.html'">View Profile</button>
+                </div>
+
+                <div class="action-card">
+                    <h3>Quick Actions</h3>
+                    <button class="action-btn">
+                        <span class="icon">🎮</span>
+                        <span>Play Games</span>
+                    </button>
+                    <button class="action-btn">
+                        <span class="icon">💬</span>
+                        <span>Community Chat</span>
+                    </button>
+                    <button class="action-btn">
+                        <span class="icon">🏆</span>
+                        <span>Tournaments</span>
+                    </button>
+                    <button class="action-btn">
+                        <span class="icon">📚</span>
+                        <span>Learn Guides</span>
+                    </button>
+                </div>
+
+                <div class="activity-card">
+                    <h3>Recent Activity</h3>
+                    <div id="recentActivity" class="activity-list">
+                        <p class="no-activity">No recent activity</p>
+                    </div>
+                </div>
+
+                <div class="achievements-card">
+                    <h3>Achievements</h3>
+                    <div id="achievementsList" class="achievements-list">
+                        <div class="achievement">
+                            <span class="achievement-icon">🎯</span>
+                            <span>New Member</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="full-width">
+                <div class="leaderboard-preview">
+                    <h3>Top 5 Players This Week</h3>
+                    <table class="preview-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Player</th>
+                                <th>Points</th>
+                                <th>Wins</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboardPreview">
+                            <tr>
+                                <td colspan="4" style="text-align: center;">Loading...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="btn-secondary" style="margin-top: 1rem;">View Full Leaderboard</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ZJHighRoll Casino Community. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

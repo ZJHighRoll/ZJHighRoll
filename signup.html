@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - ZJHighRoll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-page">
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-section">
+                <img src="logo.png" alt="ZJHighRoll Logo" class="logo">
+                <h1>ZJHighRoll</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Back to Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>Join ZJHighRoll</h2>
+            <p class="subtitle">Create your account and start winning</p>
+
+            <form id="signupForm" class="auth-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Choose your username">
+                    <small class="validation-hint" id="usernameHint"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Min 8 characters">
+                    <small class="validation-hint">
+                        Password must be at least 8 characters with uppercase, lowercase, and a number
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+                    <small class="validation-hint" id="passwordMatch"></small>
+                </div>
+
+                <div class="form-group checkbox">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the <a href="#terms" class="auth-link">Terms of Service</a> and <a href="#privacy" class="auth-link">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <div class="form-group checkbox">
+                    <label>
+                        <input type="checkbox" name="marketing">
+                        Subscribe to updates and exclusive offers
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-primary btn-full">Create Account</button>
+            </form>
+
+            <div class="auth-divider">OR</div>
+
+            <div class="social-login">
+                <button class="social-btn google">
+                    <span>Sign up with Google</span>
+                </button>
+                <button class="social-btn discord">
+                    <span>Sign up with Discord</span>
+                </button>
+            </div>
+
+            <p class="auth-footer">
+                Already have an account? <a href="login.html" class="auth-link">Login here</a>
+            </p>
+        </div>
+
+        <div class="auth-info">
+            <h3>Why Join?</h3>
+            <ul>
+                <li>✓ Free to join, play anytime</li>
+                <li>✓ Compete in global leaderboards</li>
+                <li>✓ Learn from expert guides</li>
+                <li>✓ Connect with community members</li>
+                <li>✓ Earn badges and achievements</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="successMessage" class="success-message" style="display:none;">
+        <p>Account created! Redirecting to login...</p>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

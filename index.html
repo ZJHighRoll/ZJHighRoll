@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZJHighRoll - Casino Community</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-section">
+                <img src="logo.png" alt="ZJHighRoll Logo" class="logo">
+                <h1>ZJHighRoll</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li><a href="clock.html">World Clock</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to ZJHighRoll</h2>
+            <p>Your Premier Casino Community</p>
+            <button class="btn-primary" onclick="location.href='signup.html'">Join Now</button>
+        </div>
+        <div class="logo-floating">
+            <img src="logo.png" alt="Floating Logo" class="floating-logo">
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <h2>Community Hub</h2>
+            <div class="community-grid">
+                <div class="card">
+                    <h3>Forums</h3>
+                    <p>Discuss strategies and connect with other members</p>
+                    <button class="btn-secondary">Visit Forums</button>
+                </div>
+                <div class="card">
+                    <h3>Members</h3>
+                    <p>View our active community members</p>
+                    <button class="btn-secondary">View Members</button>
+                </div>
+                <div class="card">
+                    <h3>Events</h3>
+                    <p>Join upcoming tournaments and events</p>
+                    <button class="btn-secondary">View Events</button>
+                </div>
+                <div class="card">
+                    <h3>Chat</h3>
+                    <p>Real-time chat with community members</p>
+                    <button class="btn-secondary">Join Chat</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="leaderboard">
+        <div class="container">
+            <h2>Top Players</h2>
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Points</th>
+                        <th>Wins</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardBody">
+                    <tr>
+                        <td>1</td>
+                        <td>ZJHighRoll</td>
+                        <td>15,250</td>
+                        <td>48</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Member1</td>
+                        <td>12,100</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Member2</td>
+                        <td>10,500</td>
+                        <td>38</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Guides Section -->
+    <section id="guides" class="guides">
+        <div class="container">
+            <h2>Casino Guides</h2>
+            <div class="guides-grid">
+                <article class="guide-card">
+                    <h3>Poker Basics</h3>
+                    <p>Learn the fundamentals of poker and improve your game</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+                <article class="guide-card">
+                    <h3>Blackjack Strategy</h3>
+                    <p>Master advanced blackjack tactics and win more hands</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+                <article class="guide-card">
+                    <h3>Bankroll Management</h3>
+                    <p>Manage your money wisely and maximize your winnings</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ZJHighRoll Casino Community. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
