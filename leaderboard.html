@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - ZJHighRoll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="leaderboard.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-section">
+                <img src="logo.png" alt="ZJHighRoll Logo" class="logo">
+                <h1>ZJHighRoll</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#weekly">Weekly</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="index.html#challenges">Challenges</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="leaderboard-hero">
+        <div class="container">
+            <h2>Global Leaderboard</h2>
+            <p>Top players across all time</p>
+        </div>
+    </section>
+
+    <!-- Leaderboard Filters -->
+    <section class="leaderboard-filters">
+        <div class="container">
+            <div class="filter-controls">
+                <select id="timeFilter" class="filter-select">
+                    <option value="all">All Time</option>
+                    <option value="week">This Week</option>
+                    <option value="month">This Month</option>
+                    <option value="day">Today</option>
+                </select>
+                <input type="text" id="playerSearch" placeholder="Search player..." class="search-input">
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Table -->
+    <section class="leaderboard-content">
+        <div class="container">
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Points</th>
+                        <th>Wins</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardTable">
+                    <tr>
+                        <td class="rank">1</td>
+                        <td class="player">ZJHighRoll</td>
+                        <td class="points">25,500</td>
+                        <td class="wins">68</td>
+                        <td><span class="badge online">Online</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">2</td>
+                        <td class="player">HighRoller99</td>
+                        <td class="points">22,300</td>
+                        <td class="wins">62</td>
+                        <td><span class="badge">Offline</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">3</td>
+                        <td class="player">CardMaster</td>
+                        <td class="points">19,800</td>
+                        <td class="wins">55</td>
+                        <td><span class="badge online">Online</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">4</td>
+                        <td class="player">LuckyStreak</td>
+                        <td class="points">18,200</td>
+                        <td class="wins">51</td>
+                        <td><span class="badge">Offline</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">5</td>
+                        <td class="player">PokerPro42</td>
+                        <td class="points">16,750</td>
+                        <td class="wins">48</td>
+                        <td><span class="badge online">Online</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">6</td>
+                        <td class="player">DealerBeater</td>
+                        <td class="points">15,600</td>
+                        <td class="wins">45</td>
+                        <td><span class="badge">Offline</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">7</td>
+                        <td class="player">CasinoKing</td>
+                        <td class="points">14,900</td>
+                        <td class="wins">42</td>
+                        <td><span class="badge online">Online</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">8</td>
+                        <td class="player">WinStreak88</td>
+                        <td class="points">13,450</td>
+                        <td class="wins">39</td>
+                        <td><span class="badge">Offline</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">9</td>
+                        <td class="player">StrategyMind</td>
+                        <td class="points">12,200</td>
+                        <td class="wins">36</td>
+                        <td><span class="badge online">Online</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rank">10</td>
+                        <td class="player">GoldenAce</td>
+                        <td class="points">11,800</td>
+                        <td class="wins">34</td>
+                        <td><span class="badge">Offline</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ZJHighRoll Casino Community. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="leaderboard.js"></script>
+</body>
+</html>
